@@ -7,13 +7,13 @@ Built with **Next.js**, **TypeScript**, and **Tailwind CSS**, and deployed autom
 
 ## Status
 
-[![Deploy Next.js to GitHub Pages](https://github.com/l-saul/colorconverter/actions/workflows/deploy.yml/badge.svg)](https://github.com/l-saul/colorconverter/actions/workflows/deploy.yml)
+[![Deploy Next.js to GitHub Pages](https://github.com/l-saul/colorchroma/actions/workflows/deploy.yml/badge.svg)](https://github.com/l-saul/colorchroma/actions/workflows/deploy.yml)
 
 ---
 
 ## Live Demo
 
-https://l-saul.github.io/colorconverter/
+https://l-saul.github.io/colorchroma/
 
 ---
 
@@ -50,7 +50,7 @@ npm run dev
 
 Open **http://localhost:3000** — in development the app runs at the root.
 
-> The `basePath` (`/colorconverter`) is applied **only in production builds**, so
+> The `basePath` (`/colorchroma`) is applied **only in production builds**, so
 > GitHub Pages keeps working while local dev stays on the root. See
 > [`next.config.ts`](next.config.ts).
 

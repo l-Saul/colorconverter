@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "Chroma — a playful color studio to pick colors and convert between HEX and RGB.",
-  "homepage": "https://l-saul.github.io/colorconverter/",
+  "homepage": "https://l-saul.github.io/colorchroma/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

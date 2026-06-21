@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
-const SITE_URL = 'https://l-saul.github.io/colorconverter/'
+const SITE_URL = 'https://l-saul.github.io/colorchroma/'
 const TITLE = 'Chroma — Color Picker & Converter'
 const DESCRIPTION =
     'A playful color studio to pick colors and convert between HEX and RGB instantly — with a live color wheel, smart paste and one-click copy.'
