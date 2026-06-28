@@ -5,7 +5,7 @@ export const dynamic = 'force-static'
 
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
-export const alt = 'Chroma — Color Picker & Converter'
+export const alt = 'Chroma: Escolha e Converta Cores'
 
 export default function OpengraphImage() {
     return new ImageResponse(
@@ -72,7 +72,7 @@ export default function OpengraphImage() {
                         marginTop: 8,
                     }}
                 >
-                    Your playful color studio
+                    Seu estúdio de cores favorito
                 </div>
 
                 <div
@@ -82,7 +82,7 @@ export default function OpengraphImage() {
                         marginTop: 28,
                     }}
                 >
-                    Pick colors · Convert HEX ↔ RGB · Copy in a click
+                    Escolha cores · Converta HEX ↔ RGB · Copie num clique
                 </div>
             </div>
         ),

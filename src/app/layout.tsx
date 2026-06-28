@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 const SITE_URL = 'https://l-saul.github.io/colorchroma/'
-const TITLE = 'Chroma — Color Picker & Converter'
+const TITLE = 'Chroma: Escolha e Converta Cores'
 const DESCRIPTION =
-    'A playful color studio to pick colors and convert between HEX and RGB instantly — with a live color wheel, smart paste and one-click copy.'
+    'Um estúdio de cores super divertido pra escolher suas cores favoritas e converter entre HEX e RGB num instante. Tem roda de cores ao vivo, colar esperto e cópia com um clique!'
 
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),
@@ -20,15 +20,15 @@ export const metadata: Metadata = {
     category: 'technology',
     keywords: [
         'Chroma',
-        'Color Picker',
-        'Color Converter',
-        'Color Wheel',
-        'HEX to RGB',
-        'RGB to HEX',
-        'HEX color code',
-        'RGB color code',
-        'Web Development',
-        'Design Tools',
+        'Seletor de Cores',
+        'Conversor de Cores',
+        'Roda de Cores',
+        'HEX para RGB',
+        'RGB para HEX',
+        'Código de cor HEX',
+        'Código de cor RGB',
+        'Desenvolvimento Web',
+        'Ferramentas de Design',
     ],
     alternates: {
         canonical: '/',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         description: DESCRIPTION,
         url: SITE_URL,
         siteName: 'Chroma',
-        locale: 'en_US',
+        locale: 'pt_BR',
         type: 'website',
         // OG image is auto-detected from src/app/opengraph-image.tsx
     },
@@ -73,7 +73,7 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
+        <html lang="pt-BR">
             <body className="bg-gray-950 text-white min-h-screen font-sans antialiased">
                 {children}
             </body>

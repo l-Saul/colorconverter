@@ -1,21 +1,49 @@
 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="chroma" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f472b6"/>
-      <stop offset="0.5" stop-color="#5eead4"/>
-      <stop offset="1" stop-color="#818cf8"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1e1b4b"/>
+      <stop offset="1" stop-color="#0f0a26"/>
     </linearGradient>
-    <radialGradient id="shine" cx="32" cy="30" r="60" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+    <radialGradient id="sat" cx="50" cy="50" r="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gloss" cx="34" cy="28" r="55" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/>
       <stop offset="0.6" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
+    <clipPath id="round"><rect x="4" y="4" width="92" height="92" rx="26"/></clipPath>
   </defs>
 
-  <!-- Squircle background with the brand gradient -->
-  <rect x="4" y="4" width="92" height="92" rx="26" fill="url(#chroma)"/>
-  <rect x="4" y="4" width="92" height="92" rx="26" fill="url(#shine)"/>
+  <!-- Squircle background -->
+  <g clip-path="url(#round)">
+    <rect x="4" y="4" width="92" height="92" fill="url(#bg)"/>
 
-  <!-- Color-wheel handle, matching the picker -->
-  <circle cx="50" cy="50" r="17" fill="#ffffff" fill-opacity="0.12"/>
-  <circle cx="50" cy="50" r="11" fill="#ffffff" stroke="#0f1115" stroke-opacity="0.15" stroke-width="2.5"/>
+    <!-- Color wheel (12 vivid segments) -->
+    <g transform="translate(50 50) scale(0.78) translate(-50 -50)">
+      <path d="M50,50 L90.00,50.00 A40 40 0 0 1 84.64,70.00 Z" fill="#ff2d55"/>
+      <path d="M50,50 L84.64,70.00 A40 40 0 0 1 70.00,84.64 Z" fill="#ff8a00"/>
+      <path d="M50,50 L70.00,84.64 A40 40 0 0 1 50.00,90.00 Z" fill="#ffd60a"/>
+      <path d="M50,50 L50.00,90.00 A40 40 0 0 1 30.00,84.64 Z" fill="#aaf000"/>
+      <path d="M50,50 L30.00,84.64 A40 40 0 0 1 15.36,70.00 Z" fill="#34d399"/>
+      <path d="M50,50 L15.36,70.00 A40 40 0 0 1 10.00,50.00 Z" fill="#00e0c6"/>
+      <path d="M50,50 L10.00,50.00 A40 40 0 0 1 15.36,30.00 Z" fill="#22d3ee"/>
+      <path d="M50,50 L15.36,30.00 A40 40 0 0 1 30.00,15.36 Z" fill="#3b82f6"/>
+      <path d="M50,50 L30.00,15.36 A40 40 0 0 1 50.00,10.00 Z" fill="#6366f1"/>
+      <path d="M50,50 L50.00,10.00 A40 40 0 0 1 70.00,15.36 Z" fill="#a855f7"/>
+      <path d="M50,50 L70.00,15.36 A40 40 0 0 1 84.64,30.00 Z" fill="#ec4899"/>
+      <path d="M50,50 L84.64,30.00 A40 40 0 0 1 90.00,50.00 Z" fill="#fb5c8a"/>
+      <!-- Saturation fade toward white center -->
+      <circle cx="50" cy="50" r="40" fill="url(#sat)"/>
+    </g>
+
+    <!-- Picker handle in the center -->
+    <circle cx="50" cy="50" r="9" fill="#ffffff" stroke="#0f0a26" stroke-opacity="0.25" stroke-width="2.5"/>
+
+    <!-- Glossy top-light for that shiny, playful look -->
+    <rect x="4" y="4" width="92" height="92" fill="url(#gloss)"/>
+  </g>
+
+  <!-- Sparkle for personality -->
+  <path d="M78 18 C79 24 80 25 86 26 C80 27 79 28 78 34 C77 28 76 27 70 26 C76 25 77 24 78 18 Z" fill="#ffffff" fill-opacity="0.92"/>
 </svg>

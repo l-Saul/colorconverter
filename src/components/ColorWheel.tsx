@@ -92,8 +92,8 @@ export default function ColorWheel({ hsv, onChange }: Props) {
 
             {/* Brightness slider */}
             <div className="w-full">
-                <label className="mb-1 block text-xs font-medium text-gray-400">
-                    Brightness
+                <label className="mb-1 block text-sm font-medium text-gray-400">
+                    Brilho
                 </label>
                 <input
                     type="range"
